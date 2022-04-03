@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>Mi primer formulario</title>
+    <style type="text/css">
+      pre {
+            font-size: 15px;
+            line-height: 1px;
+            font-family: sans-serif;
+            background-color: #E9E9E9
+      }
+
+
+
+     #apellido, #nombre, #ciudad, #numero {
+       width: 500px;
+       padding: 7px;
+           font-size: 15px;
+     }
+
+    #dia, #mes, #año, #dia2, #mes2, #año2, #dia3, #mes3, #año3 {
+      width: 155px;
+      padding: 7px;
+      margin-right: 7px;
+          font-size: 15px;
+
+
+     }
+     #pais, #pais2 {
+       width: 500px;
+       padding: 7px;
+       margin-right: 7px;
+     }
+
+
+
+
+
+
+
+    </style>
+  <head>
+  <body>
+    <header style="background-color:white">
+      <p style="margin-left: 641px; margin-top: 8px; margin-bottom:5px; color: #898979 "><img src="bandera.png" width="30" style=" margin-right: 35px; vertical-align: sub"  >   FORMULARIO ESTA - Información personal</p>
+      <hr>
+    </header>
+        <pre id:"pree">
+            <p>                                                                               Indicar su sexo     <input type="radio" name="genero" value="Hombre" id="hombre" / > <label for="hombre"> Hombre </label> <input type="radio" name="genero" value="Mujer" id="mujer" /> <label for="mujer"> Mujer </label></p>
+            <p>                                                                                      Apellido     <input type="text" id="apellido" Placeholder="Apellido (como se muestra en su pasaporte)"></p>
+            <p>                                                                                        Nombre     <input type="text" id="nombre" Placeholder=" Solo nombre "></p>
+            <p>                                                                           Fecha de nacimiento     <select id="dia"><option value="Dia"> Día </option></select> <select id="mes"><option value="Mes"> Mes </option></select><select id="año"><option value="Año"> Año </option></select> </p>
+            <p>                                                                          Ciudad de nacimiento     <input type="text" id="ciudad" Placeholder=" Ciudad de nacimiento "> </p>
+            <p>                                                                            País de nacimiento     <select id="pais"></select></p>
+            <p>                                                                           Número de pasaporte     <input type="number" id="numero" Placeholder=" Número de pasaporte "></p>
+            <p>                                                       País donde ha sido emitido su pasaporte     <select id="pais2"></select></p>
+            <p>                                                              Fecha de emisión de su pasaporte     <select id="dia2"><option val ue="Dia"> Día </option></select><select id="mes2"><option value="Mes"> Mes </option></select><select id="año2"><option value="Año"> Año </option></select></p>
+            <p>                                                          Fecha de vencimiento de su pasaporte     <select id="dia3"><option value="Dia"> Día </option></select><select id="mes3"><option value="Mes"> Mes </option>  </select>  <select id="año3"><option value="Año"> Año </option>  </select></p>
+        </pre>
+
+
+        <script src="form.js">
+        </script>
+
+  </body>
+</html>

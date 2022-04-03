@@ -1,0 +1,177 @@
+<html>
+  <head>
+    <title>Mi primer formulario</title>
+    <style type="text/css">
+
+    body {
+      font-family: sans-serif;
+      background-color: #E9E9E9;
+
+    }
+
+     #apellido, #nombre, #ciudad, #numero {
+       width: 500px;
+       padding: 7px;
+       margin: 7px
+     }
+
+    #dia, #mes, #año, #dia2, #mes2, #año2, #dia3, #mes3, #año3 {
+      width: 155px;
+      padding: 7px;
+      margin: 7px;
+      margin-top: 10px;
+
+     }
+     #pais, #pais2 {
+       width: 500px;
+       padding: 7px;
+       margin: 7px;
+       margin-top: 10px;
+     }
+    .content {
+      font-size: 15px;
+      line-height: 20px;
+      padding: 0 20px;
+      text-align: justify;
+    }
+
+    .left {
+      background-color: #E9E9E9;
+      float: left;
+      width: 45%;
+    }
+
+    .left .content {
+      text-align: right;
+      line-height: 50px;
+
+    }
+
+    .right {
+      background-color: #E9E9E9;
+      float: right;
+      width: 55%;
+    }
+
+    .right .content {
+      line-height: 53px;
+      }
+
+    button {
+        background: silver;
+        padding: 10px;
+        margin: 20px;
+        font-weight: bold;
+        width: 100px
+    }
+
+    table {
+      background-color: grey;
+      width: 1300px;
+      text-align: center;
+      margin: auto;
+
+    }
+    thead {
+      background-color: silver;
+      width: 400px;
+    }
+    tbody {
+      background-color: #E9E9E9;
+      width: 400px;
+    }
+
+    </style>
+  <head>
+  <body>
+    <header style="background-color:white">
+        <br>
+      <p style="margin-left: 631px; margin-top: 8px; margin-bottom:5px; color: #898979 "><img src="bandera.png" width="30" style=" margin-right: 38px; vertical-align: sub"  >   FORMULARIO ESTA - Información personal</p>
+      <hr>
+    </header>
+        <div class="left">
+          <div class="content">
+            <p> Indicar su sexo </p>
+            <p> Apellido </p>
+            <p> Nombre </p>
+            <p> Fecha de nacimiento </p>
+            <p> Ciudad de nacimiento </p>
+            <p> País de nacimiento </p>
+            <p> Número de pasaporte </p>
+            <p> País donde ha sido emitido su pasaporte </p>
+            <p> Fecha de emisión de su pasaporte </p>
+            <p> Fecha de vencimiento de su pasaporte </p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="content">
+            <form>
+            <p><input type="radio" name="genero" value="Hombre" id="hombre" / >
+            <label for="hombre"> Hombre </label>
+            <input type="radio" name="genero" value="Mujer" id="mujer" />
+            <label for="mujer"> Mujer </label></p>
+            <p><input type="text" id="apellido" Placeholder="Apellido (como se muestra en su pasaporte)"></p>
+            <p><input type="text" id="nombre" Placeholder=" Solo nombre "></p>
+            <p><select id="dia">
+              <option value="Dia"> Día </option>
+            </select>
+            <select id="mes">
+              <option value="Mes"> Mes </option>
+            </select>
+            <select id="año">
+              <option value="Año"> Año </option>
+            </select>
+            <p><input type="text" id="ciudad" Placeholder=" Ciudad de nacimiento "></p>
+            <select id="pais">
+            </select>
+            <p><input type="number" id="numero" Placeholder=" Número de pasaporte "></p>
+            <select id="pais2">
+            </select>
+            <p><select id="dia2">
+              <option value="Dia"> Día </option>
+            </select>
+            <select id="mes2">
+              <option value="Mes"> Mes </option>
+            </select>
+            <select id="año2">
+              <option value="Año"> Año </option>
+            </select>
+            <p><select id="dia3">
+              <option value="Dia"> Día </option>
+            </select>
+            <select id="mes3">
+              <option value="Mes"> Mes </option>
+            </select>
+            <select id="año3">
+              <option value="Año"> Año </option>
+            </select>
+            <br>
+          <button type="reset" onclick="enviar();"> Enviar </button>
+
+          </form>
+          </div>
+        </div>
+
+        <p>
+        <table id="tablita">
+          <thead>
+            <tr>
+              <th>Sexo</th>
+              <th>Apellido</th>
+              <th>Nombre</th>
+              <th>Fecha de nacimiento</th>
+              <th>Ciudad de nacimiento</th>
+
+          </thead>
+          <tbody id="contenido">
+
+          </tbody>
+        </table>
+
+        <script src="form.js">
+        </script>
+        <script src="tablaform.js">
+        </script>
+      </p>
+  </body>
+</html>
